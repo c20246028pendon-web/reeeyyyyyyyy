@@ -1,8 +1,14 @@
 ---
-import BaseLayouts from "../layouts/BaseLayouts.astro";
-const name = "Johnrey Luis Pendon";
-const position ="BackEnd DEV";
----	
-<BaseLayouts>
-	<h1 class ="text-red-700"> {name}| {position} </h1>
-</BaseLayouts>
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../sections/Hero.astro';
+import Project from '../sections/Project.astro';
+import About from '../sections/About.astro';
+import Contact from '../sections/Contact.astro';
+---
+
+<BaseLayout >
+    <Hero />
+    <Project />
+    <About />
+    <Contact />
+</BaseLayout>
